@@ -27,8 +27,9 @@ def main(col_names=None):
     print("max number of questions=" + str(max_tree_depth))
 
     if len(sys.argv) > 2: # draw option specified
-        import dtree_draw
-        dtree_draw.drawtree(tree, jpeg=csv_file_name+'.jpg')
+        pass
+        # import dtree_draw
+        # dtree_draw.drawtree(tree, jpeg=csv_file_name+'.jpg')
 
     if len(sys.argv) > 3:  # create json file for d3.js visualization
         import json
