@@ -57,25 +57,5 @@ def main(readname, writename):
     readfile = open(readname)
     writefile = open(writename, "w")
 
-    a = 0
-    #first line has the various attributes hence reading the first line gets us those
-    for line in readfile:
-        if a != 0:
-            writefile.write("\n")
-
-        attrs = line.rstrip().split(",")
-
-        for i in range(len(attrs)):
-            attr = attrs[i]
-
-            try:
-                attr = float(attr)
-            except ValueError:
-                pass
-
-            writefile.write(str(mult_funct[i](attr)) + ("," if i != (len(attrs) - 1) else ""))
-
-        a = 1
-
 if __name__ == "__main__":
     main("../StudentEvaluations.csv", "../NewStudEval.csv")
