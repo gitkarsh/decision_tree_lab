@@ -1,6 +1,6 @@
 import math
 
-mult_funct = [same, same, same, same, age, class_size, same, beauty_score, prof_evaluation, course_eval]
+mult_funct = [age, class_size, beauty_score, proffess_eval, course_eval]
 
 def class_size(x):
     if x <= 30:
