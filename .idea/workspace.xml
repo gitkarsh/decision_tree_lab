@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b151190-005a-4539-9c7f-87882a28da22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Regression/regr_dtree_to_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/Regression/regr_dtree_to_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Regression/regr_test_student_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/Regression/regr_test_student_eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Regression/regr_lab_course.py" beforeDir="false" afterPath="$PROJECT_DIR$/Regression/regr_lab_course.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,18 +46,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Regression/regr_dtree_to_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-729">
               <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -68,23 +58,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Regression/regr_lab_course.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="91" column="75" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Course_Eval/lab_course.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="15" lean-forward="true" selection-end-line="91" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Course_Eval/StudentEvaluations.csv - StudentEvaluations.csv.csv">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/data/NewRegr.csv">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7854">
+              <caret line="462" column="61" selection-start-line="462" selection-start-column="61" selection-end-line="462" selection-end-column="61" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/data/StudentEvaluations1.csv.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/data/StudentEvaluationsCategorical.csv.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Course_Eval/public_html/data/NewEval.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="53" lean-forward="true" selection-end-line="462" selection-end-column="61" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -123,12 +134,13 @@
         <option value="$PROJECT_DIR$/Course_Eval/lab_course.py" />
         <option value="$PROJECT_DIR$/Regression/regr_dtree_build.py" />
         <option value="$PROJECT_DIR$/Regression/regr_dtree_example_small.py" />
-        <option value="$PROJECT_DIR$/Regression/regr_lab_course.py" />
         <option value="$PROJECT_DIR$/Regression/regr_public_html/index.html" />
         <option value="$PROJECT_DIR$/Regression/regr_test_student_eval.py" />
         <option value="$PROJECT_DIR$/Regression/regr_dtree.py" />
         <option value="$PROJECT_DIR$/Regression/regr_dtree_draw.py" />
         <option value="$PROJECT_DIR$/Regression/regr_dtree_to_json.py" />
+        <option value="$PROJECT_DIR$/Regression/regr_lab_course.py" />
+        <option value="$PROJECT_DIR$/Regression/regr_public_html/data/NewRegr.csv" />
       </list>
     </option>
   </component>
@@ -251,13 +263,6 @@
     <entry file="file://$PROJECT_DIR$/dtree_build.py" />
     <entry file="file://$PROJECT_DIR$/StudentEvaluations.csv - StudentEvaluations.csv.csv" />
     <entry file="file://$PROJECT_DIR$/lab_course.py" />
-    <entry file="file://$PROJECT_DIR$/Course_Eval/lab_course.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="12" selection-end-line="91" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Regression/regr_dtree_example_small.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -265,13 +270,6 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/regr_lab_course.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="83" column="71" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -301,9 +299,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/data/StudentEvaluationsCategorical.csv.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/data/NewRegr.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/index.html">
@@ -348,11 +343,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Regression/regr_dtree_to_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="-729">
           <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course_Eval/lab_course.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="15" lean-forward="true" selection-end-line="91" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Regression/regr_lab_course.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="91" column="75" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course_Eval/public_html/data/NewEval.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="53" lean-forward="true" selection-end-line="462" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Regression/regr_public_html/data/NewRegr.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7854">
+          <caret line="462" column="61" selection-start-line="462" selection-start-column="61" selection-end-line="462" selection-end-column="61" />
         </state>
       </provider>
     </entry>

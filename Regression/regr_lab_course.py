@@ -15,6 +15,14 @@ def course_evaluation(x):  # Course evaluation attribute
 def age(x):  # Age attribute
     if x <= 30:
         return 30
+    if x <= 40:
+        return 40
+    if x <= 50:
+        return 50
+    if x <= 60:
+        return 60
+    if x <= 70:
+        return 70
 
     return (math.ceil(x/10))*10
 
