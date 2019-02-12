@@ -1,4 +1,4 @@
-import regr_dtree
+import regression_tree
 import sys
 import csv
 
@@ -9,7 +9,7 @@ def self_test(tree):
 
     for row in data:
         print(row, end="")
-        print(" prediction = " + regr_dtree.classify(row, tree))
+        print(" prediction = " + regression_tree.classify(row, tree))
 
 def main(col_names=None):
     # parse command-line arguments to read the name of the input csv file
@@ -27,21 +27,21 @@ def main(col_names=None):
             data.append(row)
 
     print("Total number of records = ",len(data))
-    tree = regr_dtree.buildtree(data, min_gain =0.003, min_samples = 5)
+    tree = regression_tree.buildtree(data, min_gain =0.003, min_samples = 5)
 
-    regr_dtree.printtree(tree, '', col_names)
+    regression_tree.printtree(tree, '', col_names)
 
-    max_tree_depth = regr_dtree.max_depth(tree)
+    max_tree_depth = regression_tree.max_depth(tree)
     print("max number of questions=" + str(max_tree_depth))
 
     if len(sys.argv) > 2: # draw option specified
-        import regr_dtree_draw
-        regr_dtree_draw.drawtree(tree, jpeg=csv_file_name+'.jpg')
+        import regression_tree_draw
+        regression_tree_draw.drawtree(tree, jpeg=csv_file_name+'.jpg')
 
     if len(sys.argv) > 3:  # create json file for d3.js visualization
         import json
-        import regr_dtree_to_json
-        json_tree = regr_dtree_to_json.dtree_to_jsontree(tree, col_names)
+        import regression_tree_to_json
+        json_tree = regression_tree_to_json.dtree_to_jsontree(tree, col_names)
         print(json_tree)
 
         # create json data for d3.js interactive visualization

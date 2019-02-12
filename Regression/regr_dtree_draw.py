@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-from regr_dtree import decisionnode
+from regression_tree import decisionnode
 
 def getwidth(tree):
     if tree.tb == None and tree.fb == None: return 1
