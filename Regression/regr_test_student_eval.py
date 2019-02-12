@@ -1,7 +1,15 @@
-import dtree_build
+import regr_dtree
 import sys
 import csv
 
+def self_test(tree):
+    data = [["tenure track", "minority", "female", "english", "50", "30", "upper", "7", "4"],
+            ["teaching", "not minority", "male", "english", "30", "30", "lower", "5", "3"],
+            ["tenure track", "minority", "male", "english", "40", "30", "lower", "5", "4"]]
+
+    for row in data:
+        print(row, end="")
+        print(" prediction = " + regr_dtree.classify(row, tree))
 
 def main(col_names=None):
     # parse command-line arguments to read the name of the input csv file
@@ -16,30 +24,31 @@ def main(col_names=None):
     with open(csv_file_name) as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
-            data.append(list(row))
+            data.append(row)
 
     print("Total number of records = ",len(data))
-    tree = dtree_build.buildtree(data, min_gain =0.01, min_samples = 5)
+    tree = regr_dtree.buildtree(data, min_gain =0.003, min_samples = 5)
 
-    dtree_build.printtree(tree, '', col_names)
+    regr_dtree.printtree(tree, '', col_names)
 
-    max_tree_depth = dtree_build.max_depth(tree)
+    max_tree_depth = regr_dtree.max_depth(tree)
     print("max number of questions=" + str(max_tree_depth))
 
     if len(sys.argv) > 2: # draw option specified
-        pass
-        # import dtree_draw
-        # dtree_draw.drawtree(tree, jpeg=csv_file_name+'.jpg')
+        import regr_dtree_tree_draw
+        regr_dtree_draw.drawtree(tree, jpeg=csv_file_name+'.jpg')
 
     if len(sys.argv) > 3:  # create json file for d3.js visualization
         import json
-        import dtree_to_json
-        json_tree = dtree_to_json.dtree_to_jsontree(tree, col_names)
+        import regr_dtree_to_json
+        json_tree = regr_dtree_to_json.dtree_to_jsontree(tree, col_names)
         print(json_tree)
 
         # create json data for d3.js interactive visualization
         with open(csv_file_name + ".json", "w") as write_file:
             json.dump(json_tree, write_file)
+
+    self_test(tree)
 
 
 if __name__ == "__main__":
@@ -53,8 +62,3 @@ if __name__ == "__main__":
                  'bty_avg',
                  'prof_eval']
     main(col_names)
-
-
-
-
-

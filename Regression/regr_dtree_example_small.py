@@ -1,4 +1,4 @@
-import dtree_build
+import regr_dtree
 import sys
 
 if __name__ == "__main__":
@@ -11,13 +11,13 @@ if __name__ == "__main__":
         [5, 'red', 'apple']
     ]
 
-    tree = dtree_build.buildtree(fruits)
-    dtree_build.printtree(tree, '', ["size", "color"])
-    print("fruit [2, 'red'] is: ", dtree_build.classify([2, 'red'], tree))
-    print("fruit [4.5, 'red'] is: ", dtree_build.classify([4.5, 'red'], tree))
-    print("fruit [1.4, 'green'] is: ", dtree_build.classify([1.4, 'green'], tree))
+    tree = regr_dtree.buildtree(fruits)
+    regr_dtree.printtree(tree, '', ["size", "color"])
+    print("fruit [2, 'red'] is: ", regr_dtree.classify([2, 'red'], tree))
+    print("fruit [4.5, 'red'] is: ", regr_dtree.classify([4.5, 'red'], tree))
+    print("fruit [1.4, 'green'] is: ", regr_dtree.classify([1.4, 'green'], tree))
 
-    max_tree_depth = dtree_build.max_depth(tree)
+    max_tree_depth = regr_dtree.max_depth(tree)
     print("max number of questions="+str(max_tree_depth))
     if len(sys.argv) > 1: # draw option specified
         import dtree_draw

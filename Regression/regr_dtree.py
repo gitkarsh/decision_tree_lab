@@ -95,7 +95,7 @@ def prediction(leaf_labels):
 
 def classify(observation, tree):
     if tree.results != None:
-        return prediction(tree.results)
+        return str(tree.results)
     else:
         v = observation[tree.col]
         branch = None
@@ -142,7 +142,7 @@ def mdclassify(observation, tree):
             return mdclassify(observation, branch)
 
 
-def buildtree(rows, scoref=entropy,
+def buildtree(rows, scoref=variance,
               min_gain=0, min_samples=0):
     if len(rows) == 0:
         return decisionnode()
@@ -180,7 +180,8 @@ def buildtree(rows, scoref=entropy,
         return decisionnode(col=best_criteria[0], value=best_criteria[1],
                             tb=trueBranch, fb=falseBranch)
     else:
-        return decisionnode(results=uniquecounts(rows))
+        leafMean = sum(map(lambda x: float(x[len(x) - 1]), rows))/len(rows)
+        return decisionnode(results=round(leafMean*10)/10)
 
 
 def max_depth(tree):
@@ -198,10 +199,10 @@ def max_depth(tree):
             return fDepth + 1
 
 
-def printtree(tree, current_branch, attributes=None,  indent='', leaff=prediction):
+def printtree(tree, current_branch, attributes=None,  indent=''):
     # Is this a leaf node?
     if tree.results != None:
-        print(indent + current_branch + str(leaff(tree.results)))
+        print(indent + current_branch + str(tree.results))
     else:
         # Print the split question
         split_col = str(tree.col)

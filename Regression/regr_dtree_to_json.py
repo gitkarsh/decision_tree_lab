@@ -1,5 +1,5 @@
 import json
-import dtree_build
+import regr_dtree
 import sys
 import csv
 
@@ -62,9 +62,9 @@ def main(col_names=None):
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
             data.append(list(row))
-    tree = dtree_build.buildtree(data, min_gain =0.01, min_samples = 30)
+    tree = regression_tree.buildtree(data, min_gain =0.01, min_samples = 5)
 
-    max_tree_depth = dtree_build.max_depth(tree)
+    max_tree_depth = regression_tree.max_depth(tree)
     print("max number of questions=" + str(max_tree_depth))
 
     json_tree = dtree_to_jsontree(tree, col_names)

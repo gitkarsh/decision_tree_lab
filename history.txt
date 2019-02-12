@@ -1,0 +1,50 @@
+python -m http.server
+php
+python -m http.server 8080
+cd ..
+dir
+cd public_html
+cd ..
+python lab_course.py
+cd public_html
+python C:\Users\akars\Desktop\decision_tree_lab-master\public_html\data\NewEval.csv a a
+python lab_course.py
+ls
+dir
+cd ..
+dir
+python test_student_eval.py C:\Users\akars\Desktop\decision_tree_lab-master\public_html\data\NewEval.csv asdf fuckme
+cd public_html
+python -m http.server 8080
+git
+cd ..
+ls
+dir
+cwd
+wd
+cd ..
+cd decision_tree_lab-master
+git status
+cd..
+git clone https://github.com/gitkarsh/decision_tree_lab.git
+dir
+cd decision_tree_lab
+dir
+git add all
+git add -A
+git commit -m "done"
+git push
+cd public_html
+dir
+python -m http.server 8080
+cd ..
+git add -A
+git commit -m "done with One"
+git push
+git pull
+git push
+git pull
+git add -A
+git commit -m "done with One"
+git push
+doskey /HISTORY > history.txt

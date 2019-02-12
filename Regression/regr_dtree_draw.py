@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-from dtree_build import decisionnode
+from regr_dtree import decisionnode
 
 def getwidth(tree):
     if tree.tb == None and tree.fb == None: return 1
@@ -43,5 +43,5 @@ def drawnode(draw, tree, x, y):
         drawnode(draw, tree.fb, left + w1 / 2, y + 100)
         drawnode(draw, tree.tb, right - w2 / 2, y + 100)
     else:
-        txt = ' \n'.join(['%s:%d' % v for v in tree.results.items()])
+        txt = ' \n' + str(tree.results)
         draw.text((x - 20, y), txt, (0, 0, 0))
