@@ -81,4 +81,4 @@ def main(readname, writename):
 
 
 if __name__ == "__main__":
-    main("StudentEvaluations.csv - StudentEvaluations.csv.csv", "../NewEval.csv")
+    main("StudentEvaluations.csv - StudentEvaluations.csv.csv", "../NewRegr.csv")
